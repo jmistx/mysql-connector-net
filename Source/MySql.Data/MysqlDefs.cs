@@ -1,4 +1,4 @@
-// Copyright © 2004, 2015 Oracle and/or its affiliates. All rights reserved.
+// Copyright Â© 2004, 2015 Oracle and/or its affiliates. All rights reserved.
 //
 // MySQL Connector/NET is licensed under the terms of the GPLv2
 // <http://www.gnu.org/licenses/old-licenses/gpl-2.0.html>, like most 
@@ -515,20 +515,7 @@ namespace MySql.Data.MySqlClient
     {
       get
       {
-        string os = string.Empty;
-        try
-        {
-          var searcher = new System.Management.ManagementObjectSearcher("SELECT * FROM Win32_OperatingSystem");
-          var collection = searcher.Get();
-          foreach (var mgtObj in collection)
-          {
-            os = mgtObj.GetPropertyValue("Caption").ToString();
-            break;
-          }
-        }
-        catch (Exception ex) { System.Diagnostics.Debug.WriteLine(ex.ToString()); }
-
-        return os;
+        return string.Empty;
       }
     }
 
