@@ -44,6 +44,4 @@ using System.Runtime.InteropServices;
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
 [assembly: Guid("399802F3-55F0-47AE-A36F-3B55CDF2E09E")]
-[assembly: AssemblyDelaySign(true)]
-[assembly: AssemblyKeyFileAttribute(@"..\..\..\ConnectorNetPublicKey.snk")]
 
